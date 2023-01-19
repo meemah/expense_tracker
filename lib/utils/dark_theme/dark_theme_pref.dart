@@ -22,6 +22,6 @@ class ThemePreferenceImpl extends ThemePreference {
 
   @override
   bool getTheme() {
-    return prefs!.getBool(themeStatus) ?? true;
+    return prefs!.getBool(themeStatus) ?? false;
   }
 }

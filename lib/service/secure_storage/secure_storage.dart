@@ -33,7 +33,7 @@ class SecureStorageServiceImpl extends SecureStorageService {
     try {
       final value = await _storage.read(key: key);
       return value;
-    } on PlatformException catch (e) {
+    } on PlatformException {
       await _storage.delete(key: key);
     }
     return null;

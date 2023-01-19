@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:dio/dio.dart';
 import 'package:expense_tracker/service/networking_service/app_exceptions.dart';
 import 'package:expense_tracker/service/secure_storage/secure_storage.dart';
@@ -28,7 +26,7 @@ class NetworkClientImpl extends NetworkService {
       final response = await _dio.get(
         url,
       );
-      log(response.data.toString());
+
       return response.data;
     } on DioError catch (e) {
       final errorMessage = DioExceptions.fromDioError(e).toString();
@@ -40,7 +38,7 @@ class NetworkClientImpl extends NetworkService {
   Future postData({required url, required Map data}) async {
     try {
       final response = await _dio.post(url, data: data);
-      log(response.data.toString());
+
       return response.data;
     } on DioError catch (e) {
       final errorMessage = DioExceptions.fromDioError(e).toString();

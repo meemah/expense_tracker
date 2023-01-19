@@ -6,7 +6,6 @@ import 'package:expense_tracker/utils/routes/routers.dart';
 import 'package:expense_tracker/viewmodels/expense_viewmodel.dart';
 import 'package:expense_tracker/views/authentication/signin_view.dart';
 
-import 'package:expense_tracker/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

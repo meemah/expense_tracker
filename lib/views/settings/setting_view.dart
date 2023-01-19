@@ -3,10 +3,9 @@ import 'package:expense_tracker/utils/dark_theme/dark_theme_provider.dart';
 import 'package:expense_tracker/utils/routes/route_names.dart';
 import 'package:expense_tracker/utils/app_color.dart';
 import 'package:expense_tracker/viewmodels/sign_in_viewmodel.dart';
-import 'package:expense_tracker/views/authentication/signin_view.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:provider/provider.dart';
 
 class SettingView extends StatelessWidget {

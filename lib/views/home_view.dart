@@ -27,7 +27,7 @@ class HomeView extends StatelessWidget {
             floatingActionButton: SpeedDial(
               activeBackgroundColor: AppColors.primaryColor,
               mini: true,
-              buttonSize: Size(160.w, 56.h),
+              buttonSize: Size(160.w, 70.h),
               childrenButtonSize: Size(160.w, 56.h),
               children: [
                 getCustomSpeedBtn(
@@ -49,7 +49,7 @@ class HomeView extends StatelessWidget {
             floatingActionButtonLocation:
                 FloatingActionButtonLocation.miniEndFloat,
             bottomNavigationBar: BottomNavigationBar(
-              elevation: 2.0,
+              elevation: 4.0,
               showSelectedLabels: true,
               showUnselectedLabels: true,
               type: BottomNavigationBarType.fixed,

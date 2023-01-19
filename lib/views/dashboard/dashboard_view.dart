@@ -6,7 +6,6 @@ import 'package:expense_tracker/utils/routes/route_names.dart';
 import 'package:expense_tracker/viewmodels/expense_viewmodel.dart';
 import 'package:expense_tracker/viewmodels/income_viewmodel.dart';
 
-import 'package:expense_tracker/views/dashboard/all_revenue_view.dart';
 import 'package:expense_tracker/views/dashboard/revenue_history_view.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -25,8 +24,11 @@ class _DashBoardViewState extends State<DashBoardView> {
   @override
   void initState() {
     super.initState();
-    Provider.of<IncomeViewmodel>(context, listen: false).getAllIncome();
-    Provider.of<ExpenditureViewmodel>(context, listen: false).getAllExpenses();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Provider.of<IncomeViewmodel>(context, listen: false).getAllIncome();
+      Provider.of<ExpenditureViewmodel>(context, listen: false)
+          .getAllExpenses();
+    });
   }
 
   @override

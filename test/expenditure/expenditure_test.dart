@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:expense_tracker/models/expense_model.dart';
 import 'package:expense_tracker/models/general_response.dart';
 
@@ -12,9 +14,6 @@ import 'expenditure_test.mocks.dart';
 @GenerateMocks([
   ExpenditureRepoImpl,
 ], customMocks: [
-  // ignore: deprecated_member_use
-
-  // ignore: deprecated_member_use
   MockSpec<GeneralResponse>(returnNullOnMissingStub: true),
   MockSpec<ExpenditureModel>(returnNullOnMissingStub: true),
 ])

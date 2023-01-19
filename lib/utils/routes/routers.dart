@@ -11,7 +11,7 @@ class Routers {
   static Route<dynamic> generateRoute(
       RouteSettings settings, BuildContext context) {
     Widget routeWidget;
-    final args = settings.arguments;
+
     switch (settings.name) {
       case AppRoutes.signIn:
         routeWidget = SignInView();

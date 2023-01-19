@@ -11,9 +11,8 @@ import 'income_test.mocks.dart';
   IncomeRepoImpl,
 ], customMocks: [
   // ignore: deprecated_member_use
-
-  // ignore: deprecated_member_use
   MockSpec<IncomeModel>(returnNullOnMissingStub: true),
+  // ignore: deprecated_member_use
   MockSpec<GeneralResponse>(returnNullOnMissingStub: true),
 ])
 void main() {
